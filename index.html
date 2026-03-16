@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laura Viñas — Desenvolupadora Software</title>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --blue: #0055a4;
+      --blue-dark: #003a73;
+      --blue-light: #e8f0fa;
+      --text: #1a1a2e;
+      --text-light: #555;
+      --border: #ccd9ee;
+      --bg: #f9fafc;
+      --white: #ffffff;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-weight: 300;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 60px 40px;
+    }
+
+    /* HEADER */
+    header {
+      border-left: 4px solid var(--blue);
+      padding-left: 28px;
+      margin-bottom: 56px;
+    }
+
+    header h1 {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 2rem;
+      font-weight: 600;
+      color: var(--blue-dark);
+      letter-spacing: -0.5px;
+      margin-bottom: 16px;
+    }
+
+    header p {
+      font-size: 1.05rem;
+      color: var(--text-light);
+      max-width: 620px;
+    }
+
+    header p strong {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    /* SECTIONS */
+    section {
+      margin-bottom: 52px;
+    }
+
+    h2 {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--blue);
+      text-transform: uppercase;
+      letter-spacing: 2.5px;
+      margin-bottom: 24px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    /* SKILLS */
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .skills span {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.8rem;
+      background: var(--white);
+      color: var(--blue-dark);
+      border: 1px solid var(--border);
+      padding: 6px 14px;
+      border-radius: 3px;
+    }
+
+    /* PROJECTS */
+    .project {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--blue);
+      padding: 20px 24px;
+      margin-bottom: 14px;
+      border-radius: 0 4px 4px 0;
+    }
+
+    .project h3 {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--blue-dark);
+      margin-bottom: 8px;
+    }
+
+    .project p {
+      font-size: 0.95rem;
+      color: var(--text-light);
+    }
+
+    .project .tech {
+      display: inline-block;
+      margin-top: 10px;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.75rem;
+      color: var(--blue);
+      background: var(--blue-light);
+      padding: 3px 10px;
+      border-radius: 3px;
+    }
+
+    /* EXPERIENCE */
+    .experience-item {
+      background: var(--white);
+      border: 1px solid var(--border);
+      padding: 20px 24px;
+      margin-bottom: 14px;
+      border-radius: 4px;
+    }
+
+    .experience-item h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 4px;
+    }
+
+    .experience-item .period {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.78rem;
+      color: var(--blue);
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    .experience-item p {
+      font-size: 0.95rem;
+      color: var(--text-light);
+    }
+
+    /* WHY ME */
+    .why-me {
+      background: var(--blue-dark);
+      color: var(--white);
+      padding: 32px 36px;
+      border-radius: 4px;
+    }
+
+    .why-me p {
+      font-size: 1rem;
+      line-height: 1.8;
+      opacity: 0.9;
+      margin-bottom: 16px;
+    }
+
+    .why-me p:last-child {
+      margin-bottom: 0;
+      font-weight: 600;
+      opacity: 1;
+    }
+
+    /* CONTACT */
+    .contact-links {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    .contact-links a {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.9rem;
+      color: var(--blue);
+      text-decoration: none;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 2px;
+      transition: border-color 0.2s;
+    }
+
+    .contact-links a:hover {
+      border-color: var(--blue);
+    }
+
+    /* FOOTER */
+    footer {
+      margin-top: 64px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.75rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <!-- HEADER -->
+  <header>
+    <h1>Laura Viñas</h1>
+    <p>
+      Professional amb <strong>més de 15 anys d'experiència en I+D</strong> al sector farmacèutic, 
+      en transició cap al desenvolupament de software. Combino el rigor analític i la capacitat 
+      de resolució de problemes adquirits al laboratori amb nous coneixements tècnics en 
+      programació. Busco una primera oportunitat com a <strong>desenvolupadora de software 
+      en remot</strong> on pugui aportar una perspectiva diferent i molta dedicació.
+    </p>
+  </header>
+
+  <!-- HABILITATS TÈCNIQUES -->
+  <section>
+    <h2>Habilitats tècniques</h2>
+    <div class="skills">
+      <span>Java</span>
+      <span>Kotlin</span>
+      <span>C# / .NET</span>
+      <span>SQL</span>
+      <span>MySQL</span>
+      <span>Hibernate / ORM</span>
+      <span>Git / GitHub</span>
+      <span>Android Studio</span>
+      <span>Programació Orientada a Objectes</span>
+    </div>
+  </section>
+
+  <!-- PROJECTES -->
+  <section>
+    <h2>Projectes acadèmics</h2>
+
+    <div class="project">
+      <h3>Base de dades — Gestió de Gimnàs</h3>
+      <p>
+        Disseny i implementació d'una base de dades relacional per gestionar socis, 
+        activitats i personal d'un gimnàs. Inclou modelatge entitat-relació, creació 
+        de taules, definició de relacions i consultes SQL complexes.
+      </p>
+      <span class="tech">SQL · MySQL</span>
+    </div>
+
+    <div class="project">
+      <h3>Aplicació de gestió — Gimnàs (POO)</h3>
+      <p>
+        Aplicació desenvolupada en Java que modela el funcionament d'un gimnàs 
+        aplicant els principis de la programació orientada a objectes: classes, 
+        herència, polimorfisme i encapsulament. Va ser el meu primer projecte 
+        on vaig veure com l'estructura del codi pot reflectir problemes reals.
+      </p>
+      <span class="tech">Java · POO</span>
+    </div>
+
+    <div class="project">
+      <h3>Accés a dades amb Hibernate</h3>
+      <p>
+        Implementació d'una capa de persistència mitjançant Hibernate com a ORM. 
+        Operacions CRUD completes, mapatge d'entitats i gestió de sessions. 
+        Va introduir-me a la separació entre lògica de negoci i accés a dades.
+      </p>
+      <span class="tech">Java · Hibernate · SQL</span>
+    </div>
+
+    <div class="project">
+      <h3>Desenvolupament d'interfícies</h3>
+      <p>
+        Disseny i implementació de components visuals i interfícies d'usuari, 
+        treballant l'experiència d'usuari i la integració amb la lògica de l'aplicació.
+      </p>
+      <span class="tech">Java · Kotlin</span>
+    </div>
+  </section>
+
+  <!-- EXPERIÈNCIA PROFESSIONAL -->
+  <section>
+    <h2>Experiència professional</h2>
+
+    <div class="experience-item">
+      <h3>Formuladora I+D — Cosmètica Farmacèutica</h3>
+      <span class="period">2010 — Actualitat</span>
+      <p>
+        Desenvolupament i formulació de productes de cosmètica de farmàcia en un 
+        laboratori d'I+D. Gestió de projectes de recerca, documentació tècnica, 
+        control de qualitat i treball amb normativa regulatòria del sector. 
+        Quinze anys en un entorn que exigeix precisió, rigor i capacitat 
+        d'adaptació contínua a nous reptes.
+      </p>
+    </div>
+
+    <div class="experience-item">
+      <h3>Tècnica de laboratori</h3>
+      <span class="period">2009 — 2010</span>
+      <p>
+        Primera experiència professional al sector químic, aplicant els 
+        coneixements del CFGS d'Anàlisi i Control.
+      </p>
+    </div>
+  </section>
+
+  <!-- FORMACIÓ -->
+  <section>
+    <h2>Formació</h2>
+
+    <div class="experience-item">
+      <h3>CFGS Desenvolupament d'Aplicacions Multiplataforma (DAM)</h3>
+      <span class="period">En curs</span>
+      <p>Formació en programació, bases de dades, desenvolupament d'aplicacions mòbils i accés a dades.</p>
+    </div>
+
+    <div class="experience-item">
+      <h3>Grau en Química</h3>
+      <span class="period">En curs — UNED</span>
+      <p>Estudis universitaris a distància compaginats amb l'activitat professional.</p>
+    </div>
+
+    <div class="experience-item">
+      <h3>CFGS Anàlisi i Control Químic</h3>
+      <span class="period">Finalitzat</span>
+      <p>Formació tècnica especialitzada en anàlisi química i control de qualitat.</p>
+    </div>
+  </section>
+
+  <!-- PER QUÈ JO -->
+  <section>
+    <h2>Per que jo</h2>
+    <div class="why-me">
+      <p>
+        No soc una estudiant sense experiència. Soc una professional que ha decidit 
+        fer un canvi de rumb als 36 anys, i aquesta decisió diu molt sobre com em 
+        prenc les coses. Quinze anys en I+D m'han ensenyat que la feina ben feta 
+        requereix paciència, metodologia i moltes ganes de continuar aprenent.
+      </p>
+      <p>
+        Aporto una capacitat analítica real, acostumada a documentar, a treballar 
+        amb dades i a trobar solucions en entorns on els errors tenen conseqüències. 
+        Ara aplico aquesta manera de treballar al codi.
+      </p>
+      <p>
+        Estic disponible per a una entrevista. Escriu-me.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTACTE -->
+  <section>
+    <h2>Contacte</h2>
+    <div class="contact-links">
+      <a href="mailto:lauravinasp@gmail.com">lauravinasp@gmail.com</a>
+      <a href="https://github.com/LauraVinasP" target="_blank">github.com/LauraVinasP</a>
+    </div>
+  </section>
+
+  <footer>
+    Laura Viñas — Portfoli professional 2026
+  </footer>
+
+</div>
+</body>
+</html>
